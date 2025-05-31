@@ -1,0 +1,134 @@
+{
+  "id": "dcb39445-9b00-4534-873b-07cae40056d4",
+  "version": "2.0",
+  "name": "DevOps_final_project",
+  "url": "http://16.171.132.166:8080/devops-app/index.jsp",
+  "tests": [{
+    "id": "81d6e528-3e31-4b26-a6d8-f43f1197d8f6",
+    "name": "project_test",
+    "commands": [{
+      "id": "b7b08750-7c88-4839-9457-c84e1fec7e90",
+      "comment": "",
+      "command": "open",
+      "target": "http://16.171.132.166:8080/devops-app/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "588cd323-4773-4425-bf74-50c83dc5bbe9",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10e8aa6b-126d-4077-bc9e-1633979f24e7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Welcome to My DevOps Web App')]", "xpath:innerText"]
+      ],
+      "value": "Welcome to My DevOps Web App"
+    }, {
+      "id": "db0b4bb5-259f-4076-bbd3-f5588cb15a8f",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60904a30-fb25-47d5-949f-75b740b54d0d",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "tommy"
+    }, {
+      "id": "c729e697-b2e8-4051-83bb-ca0646193733",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "641b1a92-7d41-4c98-be56-4e7fd09aec9b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Hello, tommy!')]", "xpath:innerText"]
+      ],
+      "value": "Hello, tommy!"
+    }, {
+      "id": "6c10e16b-543f-4d49-8b8b-116db689a5b1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Back",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Back')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.jsp')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "190e4600-7262-4385-8d30-82aab41b5eca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Visit MTA",
+      "targets": [
+        ["linkText=Visit MTA", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Visit MTA')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://mta.ac.il')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Visit MTA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e6c8f07-10b1-46da-a58a-8c59ef6082df",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.bl:nth-child(1)",
+      "targets": [
+        ["css=.bl:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='המכללה האקדמית ת\"א יפו']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6e89b34f-c5eb-4ced-aa6b-b491b82230ef",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://db1a-46-117-124-241.ngrok-free.app/", "http://16.171.132.166:8080/devops-app/index.jsp"],
+  "plugins": []
+}
