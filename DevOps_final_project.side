@@ -127,8 +127,8 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": []
+    "tests": ["81d6e528-3e31-4b26-a6d8-f43f1197d8f6"]
   }],
-  "urls": ["https://db1a-46-117-124-241.ngrok-free.app/", "http://16.171.132.166:8080/devops-app/index.jsp"],
+  "urls": ["http://16.171.132.166:8080/devops-app/index.jsp"],
   "plugins": []
 }
