@@ -26,7 +26,7 @@
     }, {
       "id": "10e8aa6b-126d-4077-bc9e-1633979f24e7",
       "comment": "",
-      "command": "verifyText",
+      "command": "assertText",
       "target": "css=h2",
       "targets": [
         ["css=h2", "css:finder"],
@@ -72,7 +72,7 @@
     }, {
       "id": "641b1a92-7d41-4c98-be56-4e7fd09aec9b",
       "comment": "",
-      "command": "assertText",
+      "command": "verifyText",
       "target": "css=h2",
       "targets": [
         ["css=h2", "css:finder"],
@@ -111,7 +111,7 @@
     }, {
       "id": "8e6c8f07-10b1-46da-a58a-8c59ef6082df",
       "comment": "",
-      "command": "assertElementPresent",
+      "command": "verifyElementPresent",
       "target": "css=.bl:nth-child(1)",
       "targets": [
         ["css=.bl:nth-child(1)", "css:finder"],
